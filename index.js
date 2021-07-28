@@ -7,9 +7,9 @@ const { User } = require("./models/User"); // User.js 형식 받아옴
 
 const config = require("./config/key");
 //application/x-www-form-urlencoded, express 최신버전에서는 npm 으로 깔지않아도 기본적으로 지원되므로 줄이 생김
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.urlencoded({ extended: true }));
 //application/json
-app.use(bodyParser.json());
+app.use(express.json());
 
 const mongoose = require("mongoose");
 mongoose
