@@ -1,5 +1,6 @@
 import axios from "axios";
 import React from "react";
+import { withRouter } from "react-router-dom";
 
 function LangdingPage(props) {
   const onClickHandler = () => {
@@ -28,4 +29,4 @@ function LangdingPage(props) {
   );
 }
 
-export default LangdingPage;
+export default withRouter(LangdingPage);
